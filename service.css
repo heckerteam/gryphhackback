@@ -1,0 +1,129 @@
+.main {
+    background-color: #383838;
+
+}
+
+.header {
+    background-color: #141414;
+    color: #C78FFF;
+    font-family: inter;
+    font-weight: 800;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 9%;
+}
+
+.search[type=text] {
+    background-color: #141414;
+    padding-left: 2%;
+    background-image: url('search.png');
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 1% 20%;
+    color: #C78FFF;
+    border-style: solid;
+    border: none;
+    border-bottom: 1px solid #C78FFF;
+    font-size: 150%;
+    margin-left: 12%;
+}
+
+.post {
+    margin: 3% 30%;
+    background-color: #141414;
+    width: 30%;
+    text-overflow: wrap-top;
+    font-family: Inter;
+    padding: 1%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map {
+    position: sticky;
+    width: 50%;
+    margin-top: 3%;
+    display: inline-block;
+}
+
+.name {
+    margin-left: 6%;
+    font-weight: 700;
+}
+
+.account {
+    margin-left: 25%;
+    margin-right: 2%;
+    font-weight: 800;
+}
+
+.position {
+    color: #C78FFF;
+    font-weight: 800;
+
+
+}
+
+.service {
+    color: white;
+    font-weight: 800;
+
+}
+
+.timings {
+    color: white;
+    font-weight: 800;
+}
+
+.location {
+    color: white;
+    font-weight: 800;
+}
+
+.description {
+    color: #C78FFF;
+    font-weight: 600;
+}
+
+.positionCLASS {
+    display: inline;
+}
+
+#description{
+    width: 300px;
+    height: 100px;
+}
+
+div >input{
+    background-color:#141414;
+    padding-left: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-position: 1% 20%;
+    color: #C78FFF;
+    border-style: solid;
+    border: none;
+    border-bottom:1px solid #C78FFF;
+    font-size:150%;
+  }
+  
+
+textarea{
+    background-color:#141414;
+    padding-left: 2%;
+    background-position: 1% 20%;
+    color: #C78FFF;
+    border-style: solid;
+    border: none;
+    border-bottom:1px solid #C78FFF;
+    font-size:150%;
+}
+
