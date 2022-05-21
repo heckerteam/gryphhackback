@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="account.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 </head>
 <body class = "main">
     <header class ="header">
@@ -27,11 +25,15 @@
     </div>
     <div class = "signup">
         <h2>Sign Up for an Account</h2>
-        <input type = "name" placeholder="First Name" class = "f_name"></input>
-        <input type= "name" placeholder = "Last Name" class = "l_name"></input>
-        <input type="email" placeholder="Email" class = "email"></input>
-        <input type="password" placeholder="Password" class = "password"></input>
-        <button type="submit" class = "submit">SignUp</button>
+        <input type = "name" name="f_name" placeholder="First Name" class = "f_name"></input>
+        <input type= "name" name="l_name" placeholder = "Last Name" class = "l_name"></input>
+        <input type="email" name="email" placeholder="Email" class = "email"></input>
+        <input type="password" name="password" placeholder="Password" class = "password"></input>
+        
+        <label for="isCoordinator">
+            <input type = "button" name="isCoordinator" class = "isCoordinator">
+            <span>Are You a Coordinator</span></label>
+        <input type="submit" class = "submit">SignUp</input>
     </div>
 </body>
 </html>
