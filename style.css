@@ -41,13 +41,13 @@ input[type=text] {
     font-family: Inter;
     padding: 1%;
     border-radius: 10px;
-    display: inline-block;
 } 
  .map{
-     position:sticky;
+     position:fixed;
      width:50%;
-     margin-top: 3%;
-     display: inline-block;
+     top:30%;
+     left:45%;
+
  }
 .name{
     margin-left: 6%;
