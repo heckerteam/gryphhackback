@@ -8,6 +8,8 @@ const apikey = "pk.eyJ1IjoianA4NDEzMzEiLCJhIjoiY2wzZjEwMGE0MDBiaTNla2JsZnB0M3Rmd
 let pos = [43.53271, -80.22747];
 latitude = []
 longitude = []
+locationArray = []
+nameArray = []
 
 // let mymap = L.map('map').setView([pos[0], pos[1]], 13);
 
@@ -25,8 +27,14 @@ document.querySelector('.find-state').addEventListener('click', () => {
         //ALL THE MARKERS COME IN HERE
         for(i = 0; i<longitude.length; i++){
 
-        var marker = L.marker(latitude[i], longitude[i]).addTo(mymap);
-        marker.bindPopup(ARRAYKEYWORDS[i]);
+        // var marker = L.marker(latitude[i], longitude[i]).addTo(mymap);
+        var marker = L.marker(
+          L.latLng(
+            parseFloat(latitude[i]),
+            parseFloat(longitude[i])
+          )
+        ).addTo(mymap)
+        marker.bindPopup(nameArray[i] + '<br>' + locationArray[i]);
 
         }
 
@@ -83,12 +91,14 @@ async function getEvents() {
       tempPosition.className = "position"
       tempPosition.innerHTML = posts[i].name;
       document.getElementById("post" + i).appendChild(tempPosition);
+      nameArray.push(posts[i].name)
 
       if (posts[i].location) {
         tempLocation = document.createElement("h2");
         tempLocation.className = "location";
         tempLocation.innerHTML = posts[i].location;
         document.getElementById("post" + i).appendChild(tempLocation);
+        locationArray.push(posts[i].location)
       }
       if (posts[i].time_start && posts[i].time_end) {
         tempTime = document.createElement("h2");
