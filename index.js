@@ -1,3 +1,5 @@
 //Search Bar
 
-var searchBar = document.getElementById('search')
+var searchBar = document.getElementById('search');
+
+searchBar.addEventListener('keyup', )
