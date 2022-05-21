@@ -57,12 +57,13 @@ input[type=text] {
     margin-left: 25%;
     margin-right: 2%;
     font-weight:800;
+    text-decoration: none;
 }
  .position{
      color: #C78FFF;
      font-weight:800;
+     text-decoration: none;
 
-     
  }
  .service{
     color: white;
