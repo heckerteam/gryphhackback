@@ -63,10 +63,11 @@ input[type=text] {
     font-weight:700;
 }
 .account{
-    margin-left: 25%;
+    margin-left: 0%;
     margin-right: 2%;
     font-weight:800;
     text-decoration: none;
+    color: #C78FFF;
 }
  .position{
      color: #C78FFF;
@@ -74,10 +75,17 @@ input[type=text] {
 
  }
  .service{
-    color: white;
+    color: #C78FFF;
     font-weight:800;
     text-decoration: none;
  }
+ .searchHeader{
+    margin-left: 20%;
+    margin-right: 2%;
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+}
 
  .timings{
      color: white;
