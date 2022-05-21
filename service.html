@@ -11,11 +11,12 @@
 
 <body class="main">
     <header class="header">
-        <img src="unknown.png" class="logo"></img>
+        <a target="_self" href = "index.html">
+            <img src = "unknown.png" class = "logo"></img>
+        </a>
         <h1 class="name">Seva Hub</h1>
-        <input type="text" placeholder="Search" class="search"></input>
-        <button class="account">Account</button>
-        <a>Service</a>
+        <a class = "account" target="_self" href = "account.html">Account</a>
+        <a class = "service" target="_self" href = "service.html">Service</a>
     </header>
     <div class="post">
         <div class="positionClass">
@@ -29,6 +30,9 @@
         </div>
         <div class="locationClass">
             <input type="text" placeholder="Enter The Location">
+        </div>
+        <div class="ageClass">
+            <input type="text" placeholder="Enter The Minimum Age">
         </div>
         <div class="descriptionClass">
             <textarea id="description" placeholder="Enter The Description Here"></textarea>
