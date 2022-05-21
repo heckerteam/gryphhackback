@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"/>
-    <script src = 'index.js'></script>
     <style>
         #map{
             height: 500px;
@@ -24,11 +23,7 @@
 </head>
 <body class = "main" id="main" onload = "getEvents()">
 
-    <h1 class="status">State</h1>
-    <button class="find-state">Open Map</button>
-
-
-    <div id="map"></div>
+    
 
     <header class ="header">
         <a target="_self" href = "index.html">
@@ -39,6 +34,11 @@
         <a class = "account" target="_self" href = "account.html">Account</a>
         <a class = "service" target="_self" href = "service.html">Service</a>
     </header>
+    <h1 class="status">State</h1>
+    <button class="find-state">Open Map</button>
+
+
+    <div  id="map"></div>
     <!-- <div class = "post">
         <h2 class = "position">Position</h2>
         <h2 class = "service">Service Name</h2>
@@ -56,6 +56,6 @@
     <br>
 
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
-    <script src="Mapping.js"></script>
+    <script src = 'index.js'></script>
 </body>
 </html>

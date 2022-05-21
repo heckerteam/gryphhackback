@@ -13,6 +13,7 @@
     align-items: center;
     padding: 1%;
     border-radius: 10px;
+    overflow: auto;
 }
 .logo{
     width: 100%;
@@ -32,6 +33,14 @@ input[type=text] {
     font-size:150%; 
     margin-left: 15%;
   }
+  input::placeholder {
+    text-align: center;
+ }
+ 
+ input:focus {
+    outline: none;
+    background-color: #212121;
+ }
 
  .post{
     margin: 3% 5%;
@@ -42,11 +51,11 @@ input[type=text] {
     padding: 1%;
     border-radius: 10px;
 } 
- .map{
+ #map{
      position:fixed;
      width:50%;
      top:30%;
-     left:45%;
+     left:25%;
 
  }
 .name{
@@ -62,13 +71,12 @@ input[type=text] {
  .position{
      color: #C78FFF;
      font-weight:800;
-     text-decoration: none;
 
  }
  .service{
     color: white;
     font-weight:800;
-
+    text-decoration: none;
  }
 
  .timings{
