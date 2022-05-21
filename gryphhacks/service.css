@@ -16,7 +16,7 @@
 }
 
 .logo {
-    width: 9%;
+    width: 100%;
 }
 
 .search[type=text] {
@@ -55,12 +55,12 @@
 }
 
 .name {
-    margin-left: 6%;
+    margin-left: 2%;
     font-weight: 700;
 }
 
 .account {
-    margin-left: 25%;
+    margin-left: 65%;
     margin-right: 2%;
     font-weight: 800;
 }
@@ -126,4 +126,22 @@ textarea{
     border-bottom:1px solid #C78FFF;
     font-size:150%;
 }
+input::placeholder{
+    text-align: center;
+ } 
+
+ input:focus{
+   outline: none;
+   background-color:#212121;
+ }
+
+ .submit{
+    padding: 1%;
+    margin: 3%;
+    width: 70%;
+    background-color: #C78FFF;
+    color: white;
+    font-size:150%;
+    
+   }
 
