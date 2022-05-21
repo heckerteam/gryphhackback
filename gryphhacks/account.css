@@ -105,6 +105,12 @@
    font-size: 150%;
    margin-left: 0%;
 }
+label{
+   color:#C78FFF;
+}
+span{
+   background-color:#141414;
+}
 
 input::placeholder {
    text-align: center;
