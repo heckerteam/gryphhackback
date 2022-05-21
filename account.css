@@ -105,6 +105,13 @@
    font-size: 150%;
    margin-left: 0%;
 }
+
+.isCoordinator{
+   background-color: #141414;
+   font-size: 125%;
+   margin-top: 15%;
+}
+
 label{
    color:#C78FFF;
 }
