@@ -1,0 +1,63 @@
+
+.main{
+    background-color: #383838 ;
+    
+}
+.header{
+    background-color: #141414;
+    color: #C78FFF;
+    font-family: inter;
+    font-weight:800;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    padding: 1%;
+    border-radius: 10px;
+    justify-content:space-between;
+}
+.logo{
+    width: 5%;
+}
+
+input[type=text] {
+    background-color:#141414;
+    padding-left: 2%;
+    background-image: url('search.png');
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 1% 20%;
+    color: #C78FFF;
+    border-style: solid;
+    border: none;
+    border-bottom:1px solid #C78FFF;
+    border-radius: 0px;
+    font-size:150%; 
+  }
+
+ .post{
+    margin: 3% 5%;
+    background-color:#141414;
+    width:min-content;
+    text-overflow: wrap;
+    padding: 1%;
+ } 
+
+ .position{
+     color: #C78FFF;
+ }
+ .service{
+    color: white;
+ }
+
+ .timings{
+     color: white;
+ }
+ .location{
+     color: white;
+ }
+
+ .description{
+     color: #C78FFF;
+ }
+
+
