@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="service.css">
+    <script src="service.js"></script>
 </head>
 
 <body class="main">
@@ -20,22 +21,20 @@
     </header>
     <div class="post">
         <div class="positionClass">
-            <input type="text" placeholder="Enter Position Name">
-        </div>
-        <div class="serviceClass">
-            <input type="text" placeholder="Enter Service Name">
+            <input type="text" placeholder="Enter Position Name" id="name">
         </div>
         <div class="timingsClass">
-            <input type="text" placeholder="Enter Timings">
+            <input type="time" id = "sTime">
+            <input type = "time" id = "eTime">
         </div>
         <div class="locationClass">
-            <input type="text" placeholder="Enter The Location">
+            <input type="text" placeholder="Enter The Location" id = "location">
         </div>
         <div class="ageClass">
             <input type="text" placeholder="Enter The Minimum Age">
         </div>
         <div class="descriptionClass">
-            <textarea id="description" placeholder="Enter The Description Here"></textarea>
+            <textarea id="description" placeholder="Enter The Description Here" id = "desc"></textarea>
         </div>
         <div class="Submit">
             <button type="submit" class="btn btn-white btn-animate">Post This Opportunity</button>
