@@ -7,9 +7,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"/>
     <script src = 'index.js'></script>
+    <style>
+        #map{
+            height: 500px;
+            width: 500px;
+            margin: 5rem auto;
+            position: sticky;
+            margin-right: 5%;
+        }
+        .find-state{
+            margin-right: 10%;
+        }
+    </style>
 </head>
 <body class = "main" id="main" onload = "getEvents()">
+
+    <h1 class="status">State</h1>
+    <button class="find-state">Open Map</button>
+
+
+    <div id="map"></div>
+
     <header class ="header">
         <a target="_self" href = "index.html">
             <img src = "unknown.png" class = "logo"></img>
@@ -34,6 +54,8 @@
         <p class = "description">Description - wieu wiusd nawkuyadk hwukd hkahwuk dhawu kdhauk  wdhuk ahdk awhdk aw hdk awhd kahduk ahdku ahdk uahd khaw kdh wieu  wiusdnaw kuyadkhwukd hkahwu kdhawu kdhau kwd huka dkawhdk awhdka whdka hdukahdku ahdk uahdk haw kdh</p>
     </div> -->
     <br>
-    <img src = "placeholder.jpg" class = "map"></img>
+
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+    <script src="Mapping.js"></script>
 </body>
 </html>
