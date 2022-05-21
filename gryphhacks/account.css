@@ -24,11 +24,18 @@
    font-weight: 700;
 }
 
-.account {
-   margin-left: 65%;
+.searchHeader{
+   margin-left: 60%;
    margin-right: 2%;
    font-weight: 800;
-   color: #C78FFF;
+   text-decoration: none;
+   color: white;
+}
+.account {
+   margin-left: 0%;
+   margin-right: 2%;
+   font-weight: 800;
+   color: white;
    text-decoration: none;
 }
 

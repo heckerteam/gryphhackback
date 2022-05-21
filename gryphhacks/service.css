@@ -60,7 +60,13 @@
 }
 
 .account {
-    margin-left: 65%;
+    margin-left: 0%;
+    margin-right: 2%;
+    font-weight: 800;
+    text-decoration: none;
+}
+.searchHeader{
+    margin-left: 60%;
     margin-right: 2%;
     font-weight: 800;
     text-decoration: none;
@@ -69,7 +75,6 @@
 .position {
     color: #C78FFF;
     font-weight: 800;
-
 
 }
 
