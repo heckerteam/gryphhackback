@@ -13,7 +13,6 @@
     align-items: center;
     padding: 1%;
     border-radius: 10px;
-    justify-content:space-between;
 }
 .logo{
     width: 5%;
@@ -30,34 +29,59 @@ input[type=text] {
     border-style: solid;
     border: none;
     border-bottom:1px solid #C78FFF;
-    border-radius: 0px;
     font-size:150%; 
+    margin-left: 20%;
   }
 
  .post{
     margin: 3% 5%;
     background-color:#141414;
-    width:min-content;
-    text-overflow: wrap;
+    width:30%;
+    text-overflow: wrap-top;
+    font-family: Inter;
     padding: 1%;
- } 
-
+    border-radius: 10px;
+    display: inline-block;
+} 
+ .map{
+     position:sticky;
+     width:50%;
+     margin-top: 3%;
+     display: inline-block;
+ }
+.name{
+    margin-left: 5%;
+    font-weight:700;
+}
+.account{
+    margin-left: 25%;
+    margin-right: 2%;
+    font-weight:800;
+}
  .position{
      color: #C78FFF;
+     font-weight:800;
+
+     
  }
  .service{
     color: white;
+    font-weight:800;
+
  }
 
  .timings{
      color: white;
- }
+     font-weight:800;
+    }
  .location{
      color: white;
- }
+     font-weight:800;
+    }
 
  .description{
      color: #C78FFF;
- }
+     font-weight:600;
+}
 
 
