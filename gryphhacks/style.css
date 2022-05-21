@@ -15,7 +15,7 @@
     border-radius: 10px;
 }
 .logo{
-    width: 5%;
+    width: 9%;
 }
 
 input[type=text] {
@@ -30,7 +30,7 @@ input[type=text] {
     border: none;
     border-bottom:1px solid #C78FFF;
     font-size:150%; 
-    margin-left: 20%;
+    margin-left: 10%;
   }
 
  .post{
@@ -50,7 +50,7 @@ input[type=text] {
      display: inline-block;
  }
 .name{
-    margin-left: 5%;
+    margin-left: 6%;
     font-weight:700;
 }
 .account{
