@@ -1,128 +1,144 @@
-.main{
-    background-color: #383838 ;
-    
+.main {
+   background-color: #383838;
+
 }
-.header{
-    background-color: #141414;
-    color: #C78FFF;
-    font-family: inter;
-    font-weight:800;
-    display: flex;
-    margin: 0;
-    align-items: center;
-    padding: 1%;
-    border-radius: 10px;
+
+.header {
+   background-color: #141414;
+   color: #C78FFF;
+   font-family: inter;
+   font-weight: 800;
+   display: flex;
+   margin: 0;
+   align-items: center;
+   padding: 1%;
+   border-radius: 10px;
 }
-.logo{
-    width: 100%;
+
+.logo {
+   width: 100%;
 }
-.name{
-    margin-left: 2%;
-    font-weight:700;
+
+.name {
+   margin-left: 2%;
+   font-weight: 700;
 }
-.account{
-    margin-left: 65%;
-    margin-right: 2%;
-    font-weight:800;
-    color: #C78FFF;
+
+.account {
+   margin-left: 65%;
+   margin-right: 2%;
+   font-weight: 800;
+   color: #C78FFF;
 }
-.service{
-    color: #C78FFF;
-    font-weight:800;
 
- }
+.service {
+   color: #C78FFF;
+   font-weight: 800;
 
- .signup{
-    margin: 3% 2%;
-    background-color:#141414;
-    width:30%;
-    text-overflow: wrap-top;
-    font-family: Inter;
-    padding: 1%;
-    border-radius: 10px;
-    flex-direction: column;
-    align-items: center;
-    display: inline-flex;
- }
+}
 
- .login{
-    margin-top: 3%;
-    margin-left: 15%;
-    background-color:#141414;
-    width:30%;
-    text-overflow: wrap-top;
-    font-family: Inter;
-    padding: 1%;
-    border-radius: 10px;
-    flex-direction: column;
-    align-items: center;
-    display: inline-flex;
- }
+.signup {
+   margin: 3% 2%;
+   background-color: #141414;
+   width: 30%;
+   text-overflow: wrap-top;
+   font-family: Inter;
+   padding: 1%;
+   border-radius: 10px;
+   flex-direction: column;
+   align-items: center;
+   display: inline-flex;
+}
+
+.login {
+   margin-top: 3%;
+   margin-left: 15%;
+   background-color: #141414;
+   width: 30%;
+   text-overflow: wrap-top;
+   font-family: Inter;
+   padding: 1%;
+   border-radius: 10px;
+   flex-direction: column;
+   align-items: center;
+   display: inline-flex;
+}
 
 
- .f_name{
-    background-color:#141414;
-    color: #C78FFF;
-    border-style: solid;
-    border: none;
-    border-bottom:1px solid #C78FFF;
-    font-size:150%; 
-    margin-left: 0%;
- }
- .l_name{
-    background-color:#141414;
-    color: #C78FFF;
-    border-style: solid;
-    border: none;
-    border-bottom:1px solid #C78FFF;
-    font-size:150%; 
-    margin-left: 0%;
- }
- .email{
-    background-color:#141414;
-    color: #C78FFF;
-    border-style: solid;
-    border: none;
-    border-bottom:1px solid #C78FFF;
-    font-size:150%; 
-    margin-left: 0%;
- }
- .password{
-    background-color:#141414;
-    color: #C78FFF;
-    border-style: solid;
-    border: none;
-    border-bottom:1px solid #C78FFF;
-    font-size:150%; 
-    margin-left: 0%;    
- }
- input::placeholder{
-    text-align: center;
- } 
+.f_name {
+   background-color: #141414;
+   color: #C78FFF;
+   border-style: solid;
+   border: none;
+   border-bottom: 1px solid #C78FFF;
+   font-size: 150%;
+   margin-left: 0%;
+}
 
- input:focus{
+.l_name {
+   background-color: #141414;
+   color: #C78FFF;
+   border-style: solid;
+   border: none;
+   border-bottom: 1px solid #C78FFF;
+   font-size: 150%;
+   margin-left: 0%;
+}
+
+.email {
+   background-color: #141414;
+   color: #C78FFF;
+   border-style: solid;
+   border: none;
+   border-bottom: 1px solid #C78FFF;
+   font-size: 150%;
+   margin-left: 0%;
+}
+
+.password {
+   background-color: #141414;
+   color: #C78FFF;
+   border-style: solid;
+   border: none;
+   border-bottom: 1px solid #C78FFF;
+   font-size: 150%;
+   margin-left: 0%;
+}
+
+input::placeholder {
+   text-align: center;
+}
+
+input:focus {
    outline: none;
-   background-color:#212121;
- }
+   background-color: #212121;
+}
 
- .submit{
-    padding: 1%;
-    margin: 3%;
-    width: 70%;
-    background-color: #C78FFF;
-    color: white;
-    font-size:150%;
+.submit {
+   padding: 1%;
+   margin: 3%;
+   width: 70%;
+   background-color: #C78FFF;
+   color: white;
+   font-size: 150%;
 
-   }
- h2{
-    color: #C78FFF;
-    font-weight:800;
- }
+}
+
+h2 {
+   color: #C78FFF;
+   font-weight: 800;
+}
 
 
- div > input{
-     padding-top: 5%;
- }
- a{
-    text-decoration: none;
- }
+div>input {
+   padding-top: 5%;
+}
+
+a {
+   text-decoration: none;
+}
+
+input:-webkit-autofill {
+   -webkit-box-shadow: 0 0 0 50px #141414 inset;
+   -webkit-text-fill-color: #C78FFF;
+}
