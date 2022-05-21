@@ -1,0 +1,108 @@
+.main{
+    background-color: #383838 ;
+    
+}
+.header{
+    background-color: #141414;
+    color: #C78FFF;
+    font-family: inter;
+    font-weight:800;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    padding: 1%;
+    border-radius: 10px;
+}
+.logo{
+    width: 9%;
+}
+.name{
+    margin-left: 2%;
+    font-weight:700;
+}
+.account{
+    margin-left: 65%;
+    margin-right: 2%;
+    font-weight:800;
+}
+.service{
+    color: white;
+    font-weight:800;
+
+ }
+
+ .signup{
+    margin: 3% 5%;
+    background-color:#141414;
+    width:30%;
+    text-overflow: wrap-top;
+    font-family: Inter;
+    padding: 1%;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    display: inline-flex;
+ }
+
+ .login{
+    margin: 3% 5%;
+    background-color:#141414;
+    width:30%;
+    text-overflow: wrap-top;
+    font-family: Inter;
+    padding: 1%;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    display: inline-flex;
+ }
+
+
+ .f_name{
+    background-color:#141414;
+    color: #C78FFF;
+    border-style: solid;
+    border: none;
+    border-bottom:1px solid #C78FFF;
+    font-size:150%; 
+    margin-left: 0%;
+ }
+ .l_name{
+    background-color:#141414;
+    color: #C78FFF;
+    border-style: solid;
+    border: none;
+    border-bottom:1px solid #C78FFF;
+    font-size:150%; 
+    margin-left: 0%;
+ }
+ .email{
+    background-color:#141414;
+    color: #C78FFF;
+    border-style: solid;
+    border: none;
+    border-bottom:1px solid #C78FFF;
+    font-size:150%; 
+    margin-left: 0%;
+ }
+ .password{
+    background-color:#141414;
+    color: #C78FFF;
+    border-style: solid;
+    border: none;
+    border-bottom:1px solid #C78FFF;
+    font-size:150%; 
+    margin-left: 0%;    
+ }
+
+ h2{
+    color: #C78FFF;
+    font-weight:800;
+ }
+
+ input::placeholder{
+    text-align: center;
+ }
+ div > input{
+     padding-top: 5%;
+ }
