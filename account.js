@@ -45,9 +45,14 @@ async function login() {
   })
     .then((response) => {
       if (!response.ok) return Promise.reject(response);
-
-      document.cookie = response.headers["Cookie"];
-      console.log(response.headers.get('x-auth-token'));
+      if(response.status == 200){
+        console.log(response.body)
+        // location.href='index.html'
+      }else{
+        console.log('L Bozo')
+      }
+      // document.cookie = response.headers["Cookie"];
+      // console.log(response.headers.get('x-auth-token'));
       return response.json();
     })
     .then((data) => {
