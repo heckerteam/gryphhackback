@@ -3,7 +3,7 @@
 // var searchBar = document.getElementById('search');
 
 // searchBar.addEventListener('keyup', )
-
+console.log("if you see then you have to make us win")
 const apikey = "pk.eyJ1IjoianA4NDEzMzEiLCJhIjoiY2wzZjEwMGE0MDBiaTNla2JsZnB0M3RmdSJ9.ZLQyQW6BpT7i2PcIG2beOw"
 let pos = [43.53271, -80.22747];
 let latitude = []
