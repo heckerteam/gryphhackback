@@ -83,14 +83,18 @@ async function getEvents() {
     .catch(error => console.warn("there has been an error with loading please try again\n" + error));
 
   if (posts && posts.length > 0) {
-    for (i = 0; i < posts.length; i++) {
+    for (i = posts.length -1; i >= 0; i--) {
       temp = document.createElement("div");
       temp.className = "post";
       temp.id = "post" + i;
       document.getElementById("main").appendChild(temp);
 
+      console.log(i)
+
       tempPosition = document.createElement("h2");
       tempPosition.className = "position"
+
+
       tempPosition.innerHTML = posts[i].name;
       document.getElementById("post" + i).appendChild(tempPosition);
       nameArray.push(posts[i].name)
