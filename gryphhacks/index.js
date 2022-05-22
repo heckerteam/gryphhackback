@@ -37,7 +37,7 @@ document.querySelector('.find-state').addEventListener('click', () => {
         marker.bindPopup(nameArray[i] + '<br>' + locationArray[i]);
 
         }
-
+          
 
 
 
@@ -77,7 +77,8 @@ async function getEvents() {
     .then((response) => response.json())
     .then((res) => {
       return res;
-    });
+    })
+    .catch(error => alert("there has been an error with loading please try again\n" + error));
 
   console.log(posts[0]);
   if (posts.length > 0) {
