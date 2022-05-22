@@ -118,6 +118,12 @@ async function getEvents() {
           Edate.getMinutes();
         document.getElementById("post" + i).appendChild(tempTime);
       }
+      if (posts[i].email) {
+        tempEmail = document.createElement("h2");
+        tempEmail.className = "email";
+        tempEmail.innerHTML = posts[i].email;
+        document.getElementById("post" + i).appendChild(tempEmail);
+      }
       if (posts[i].description) {
         tempDesc = document.createElement("p");
         tempDesc.className = "description";
@@ -153,6 +159,11 @@ async function getEvents() {
       tempTime.className = "timings";
       tempTime.innerHTML ="3:00 - 7:00"
       document.getElementById("post1").appendChild(tempTime);
+
+      tempEmail = document.createElement("h2");
+        tempEmail.className = "email";
+        tempEmail.innerHTML = "Volunteering@GeulphUniversity.com";
+        document.getElementById("post1").appendChild(tempEmail);
 
       tempDesc = document.createElement("p");
         tempDesc.className = "description";
