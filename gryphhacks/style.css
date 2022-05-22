@@ -95,7 +95,7 @@ input[type=text] {
 }
 
  .timings{
-     color: white;
+     color: #C78FFF;
      font-weight:800;
     }
  .location{
@@ -106,9 +106,14 @@ input[type=text] {
     color: white;
     font-weight:800;
 }
+.age{
+    color: #C78FFF;
+    font-weight:800;
+}
  .description{
      color: #C78FFF;
      font-weight:600;
 }
+
 
 
