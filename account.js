@@ -13,7 +13,7 @@ async function signUp() {
   };
   console.log(out);
 
-  fetch("http://api.sevahub.tech:8080/api/signup", {
+  fetch("https://api.sevahub.tech:8080/api/signup", {
     method: "POST",
     body: JSON.stringify(out),
   })
