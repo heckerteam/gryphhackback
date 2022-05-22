@@ -1,6 +1,6 @@
 .main {
     background-color: #383838;
-
+    font-family: Inter, sams-serif;
 }
 
 .header {
@@ -120,7 +120,9 @@ div>input {
     border-bottom: 1px solid #C78FFF;
     font-size: 150%;
 }
-
+input[type=time]{
+    margin-left: 20%;
+}
 
 textarea {
     background-color: #141414;
@@ -151,7 +153,27 @@ input:focus {
     font-size: 150%;
 
 }
-
+.isRecurring{
+    background-color: #141414;
+    font-size: 145%;
+    margin-top: 25%;
+ }
+ 
+ label{
+    color:#C78FFF;
+ }
+ span{
+    background-color:#141414;
+ }
+ .submit {
+    padding: 1%;
+    margin: 3%;
+    width: 70%;
+    background-color: #C78FFF;
+    color: white;
+    font-size: 150%;
+ 
+ }
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 50px #141414 inset;
     -webkit-text-fill-color: #C78FFF;
