@@ -1,6 +1,6 @@
 #map{
-    height: 500px;
-    width: 500px;
+    height: 700px;
+    width: 700px;
     margin-left: 50%;
     position: fixed;
     top: 20%;
@@ -64,7 +64,7 @@ input[type=text] {
     border-radius: 10px;
 } 
 
- }
+ 
 .name{
     margin-left: 6%;
     font-weight:700;

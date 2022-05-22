@@ -64,6 +64,11 @@ document.querySelector('.find-state').addEventListener('click', () => {
     });
     // L.map('map').setView([pos[0], pos[1]], 13).addTo(mymap);
 });
+// console.log("aaaaa")
+function noButtons(){
+  let button = document.getElementById('button')
+  button.remove();
+}
 
 
 async function getEvents() {
