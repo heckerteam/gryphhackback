@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="account.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
+    <script src="account.js"></script>
 </head>
 <body class = "main">
     <header class ="header">
@@ -18,21 +19,21 @@
     </header>
     <div class = "login">
         <h2>Login</h2>
-        <input type="email" placeholder="Email" class = "email"></input>
-        <input type="password" placeholder="Password" class = "password"></input>
-        <button type="submit" class = "submit">Login</button>
+        <input type="email" placeholder="Email" class = "email" id="emailL"></input>
+        <input type="password" placeholder="Password" class = "password" id="passwordL"></input>
+        <button type="submit" class = "submit" onClick="login()">Login</button>
     </div>
     <div class = "signup">
         <h2>Sign Up</h2>
-        <input type = "name" name="f_name" placeholder="First Name" class = "f_name"></input>
-        <input type= "name" name="l_name" placeholder = "Last Name" class = "l_name"></input>
-        <input type="email" name="email" placeholder="Email" class = "email"></input>
-        <input type="password" name="password" placeholder="Password" class = "password"></input>
+        <input type = "name" name="f_name" placeholder="First Name" class = "f_name" id="f_name"></input>
+        <input type= "name" name="l_name" placeholder = "Last Name" class = "l_name" id="l_name"></input>
+        <input type="email" name="email" placeholder="Email" class = "email" id="email"></input>
+        <input type="password" name="password" placeholder="Password" class = "password" id="password"></input>
         <br>
         <label for="isCoordinator">
-            <input type = "checkbox" name="isCoordinator">
+            <input type = "checkbox" name="isCoordinator" id="isCoordinator">
             <span class = "isCoordinator" style="color: gray;">Are You A Coordinator?</span></label>
-        <input type="submit" class = "submit"></input>
+        <input type="submit" class = "submit" onClick="signUp()"></input>
     </div>
 </body>
 </html>

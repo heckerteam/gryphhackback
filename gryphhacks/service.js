@@ -10,11 +10,11 @@ async function getCords(address) {
 }
 
 async function sendData() {
-  let nameHtml = document.getElementById("name");
-  let sTime = document.getElementById("stime");
-  let eTime = document.getElementById("eTime");
-  let address = document.getElementById("address");
-  let desc = document.getElementById("desc");
+  let nameHtml = document.getElementById("name").value;
+  let sTime = document.getElementById("stime").value;
+  let eTime = document.getElementById("eTime").value;
+  let address = document.getElementById("address").value;
+  let desc = document.getElementById("desc").value;
   const [lat, long] = await (await getCords(address));
   fetch("apistuff", {
     method: "POST",
@@ -38,6 +38,6 @@ async function sendData() {
       console.log(data);
     })
     .catch(function (error) {
-      console.warn("Something went wrong.", error);
+      alert("Something went wrong.\n", error);
     });
 }
