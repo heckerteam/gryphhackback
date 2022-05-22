@@ -1,3 +1,15 @@
+#map{
+    height: 500px;
+    width: 500px;
+    margin-left: 50%;
+    position: fixed;
+    top: 20;
+    border-radius: 3%;
+
+}
+.find-state{
+margin-left: 67%;
+}
 
 .main{
     background-color: #383838 ;
@@ -51,11 +63,6 @@ input[type=text] {
     padding: 1%;
     border-radius: 10px;
 } 
- #map{
-     position:fixed;
-     width:50%;
-     top:30%;
-     left:0%;
 
  }
 .name{
