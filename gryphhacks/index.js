@@ -30,7 +30,7 @@ function noButtons(){
 
 
 async function getEvents() {
-  let posts = await fetch("http://api.sevahub.tech:8080/api/events/all", {
+  let posts = await fetch("https://api.sevahub.tech:8080/api/events/all", {
     mode: "cors",
     method: "GET",
     headers: {
