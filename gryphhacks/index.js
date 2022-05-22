@@ -11,57 +11,18 @@ let longitude = []
 let locationArray = []
 let nameArray = []
 
-// let mymap = L.map('map').setView([pos[0], pos[1]], 13);
 
-document.querySelector('.find-state').addEventListener('click', () => {
-    const status = document.querySelector('.status');
-    navigator.geolocation.getCurrentPosition((position) => {
-        console.log(position);
-        pos = [position.coords.latitude, position.coords.longitude];
-        console.log(pos);
-        const mymap = L.map('map').setView([pos[0], pos[1]], 13);
+var logoIcon = L.icon({
+  iconUrl: 'unknown.png',
+  shadowUrl: 'leaf-shadow.png',
 
-
-        //ALL THE MARKERS COME IN HERE
-        for(i = 0; i<longitude.length; i++){
-
-        // var marker = L.marker(latitude[i], longitude[i]).addTo(mymap);
-        var marker = L.marker(
-          L.latLng(
-            parseFloat(latitude[i]),
-            parseFloat(longitude[i])
-          )
-        ).addTo(mymap)
-        marker.bindPopup(nameArray[i] + '<br>' + locationArray[i]);
-
-        }
-          
-
-
-
-        //DO NOT TOUCH --
-        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-            maxZoom: 18,
-            id: 'mapbox/streets-v11',
-            tileSize: 512,
-            zoomOffset: -1,
-            accessToken: apikey
-        }).addTo(mymap);
-        //-- DO NOT TOUCH ENDS
-    }, () => {
-        status.textConent = "FAIL"
-        pos = [43.53271, -80.22747];
-        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-        maxZoom: 18,
-        id: 'mapbox/streets-v11',
-        tileSize: 512,
-        zoomOffset: -1,
-        accessToken: apikey
-    }).addTo(mymap);
-
-    });
-    // L.map('map').setView([pos[0], pos[1]], 13).addTo(mymap);
+  iconSize:     [45, 45], // size of the icon
+  shadowSize:   [0, 0], // size of the shadow
 });
+
+console.log("HelLOoLoo")
+
+// let mymap = L.map('map').setView([pos[0], pos[1]], 13);
 function noButtons(){
   let button = document.getElementById('button')
   button.remove();
@@ -185,4 +146,55 @@ async function getEvents() {
         document.getElementById("post1").appendChild(tempDesc);
   }
 }
+
+
+document.querySelector('.find-state').addEventListener('click', () => {
+    const status = document.querySelector('.status');
+    navigator.geolocation.getCurrentPosition((position) => {
+        console.log(position);
+        pos = [position.coords.latitude, position.coords.longitude];
+        console.log(pos);
+        const mymap = L.map('map').setView([pos[0], pos[1]], 13);
+
+
+        //ALL THE MARKERS COME IN HERE
+        for(i = 0; i<longitude.length; i++){
+
+        // var marker = L.marker(latitude[i], longitude[i]).addTo(mymap);
+        var marker = L.marker(
+          L.latLng(
+            parseFloat(latitude[i]),
+            parseFloat(longitude[i])
+          ), {icon:logoIcon}
+        ).addTo(mymap)
+        marker.bindPopup(nameArray[i] + '<br>' + locationArray[i]);
+
+        }
+          
+
+
+
+        //DO NOT TOUCH --
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: apikey
+        }).addTo(mymap);
+        //-- DO NOT TOUCH ENDS
+    }, () => {
+        status.textConent = "FAIL"
+        pos = [43.53271, -80.22747];
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: apikey
+    }).addTo(mymap);
+
+    });
+    // L.map('map').setView([pos[0], pos[1]], 13).addTo(mymap);
+});
 
