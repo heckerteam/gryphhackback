@@ -16,6 +16,8 @@ async function sendData() {
   let address = document.getElementById("address").value;
   let desc = document.getElementById("desc").value;
   let email = document.getElementById("email").value;
+  let date = document.getElementById("date").value;
+  let isRecurring = document.getElementById("isRecurring").checked;
   const [lat, long] = await (await getCords(address));
   fetch("apistuff", {
     method: "POST",
@@ -27,7 +29,9 @@ async function sendData() {
       latitude: lat,
       longitude: long,
       description: desc,
-      email: email
+      email: email,
+      date: date,
+      isRecurring: isRecurring
     }),
   })
     .then(function (response) {
