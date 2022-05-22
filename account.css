@@ -32,11 +32,12 @@
    color: white;
 }
 .account {
-   margin-left: 0%;
+   margin-left: 65%;
    margin-right: 2%;
    font-weight: 800;
-   color: white;
+   color: #C78FFF;
    text-decoration: none;
+   
 }
 
 .service {
