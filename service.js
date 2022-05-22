@@ -11,27 +11,36 @@ async function getCords(address) {
 
 async function sendData() {
   let nameHtml = document.getElementById("name").value;
-  let sTime = document.getElementById("stime").value;
+  let sTime = document.getElementById("sTime").value;
   let eTime = document.getElementById("eTime").value;
-  let address = document.getElementById("address").value;
+  let address = document.getElementById("location").value;
+  let minAge = document.getElementById("minAge").value;
+  if(minAge < 0 || minAge > 100 ){
+    alert("please input correct age")
+    return 0
+  }
   let desc = document.getElementById("desc").value;
   let email = document.getElementById("email").value;
   let date = document.getElementById("date").value;
+  if(Date.parse(date)-Date.parse(new Date())<0){
+    alert("please input future date")
+    return 0
+  }
   let isRecurring = document.getElementById("isRecurring").checked;
   const [lat, long] = await (await getCords(address));
   fetch("http://api.sevahub.tech:8080/api/events/create", {
     method: "POST",
     body: JSON.stringify({
       name: nameHtml,
-      time_start: sTime,
-      time_end: eTime,
+      time_start: date + " " + sTime + ":00",
+      time_end: date + " " + eTime + ":00",
       location: address,
-      latitude: lat,
-      longitude: long,
+      min_age: parseInt(minAge),
+      lat: lat,
+      long: long,
       description: desc,
       email: email,
-      date: date,
-      isRecurring: isRecurring
+      is_recurring: isRecurring
     }),
   })
     .then(function (response) {
@@ -44,6 +53,6 @@ async function sendData() {
       console.log(data);
     })
     .catch(function (error) {
-      alert("Something went wrong.\n", error);
+      console.warn("Something went wrong.\n" + error);
     });
 }

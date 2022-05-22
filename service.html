@@ -39,15 +39,18 @@
         <div class="locationClass">
             <input type="text" placeholder="Enter The Location" id = "location">
         </div>
+        <div class="minAge">
+            <input type="number" min="0" placeholder="Enter The Minimum Age" id = "minAge">
+        </div>
         <div class="emailClass">
             <input type="text" placeholder="Enter your Contact Email" id = "email">
         </div>
         <div class="descriptionClass">
-            <textarea id="description" placeholder="Enter The Description Here" id = "desc"></textarea>
+            <textarea placeholder="Enter The Description Here" id = "desc"></textarea>
         </div>
         <div class="SubmitS">
-            <button type="submit" class="btn btn-white btn-animate" class="submit">Post This Opportunity</button>
-        </div>
+            <button type="submit" class="btn btn-white btn-animate" class="submit" onclick="sendData()">Post This Opportunity</button>
+        </div>1
     </div>
 </body>
 

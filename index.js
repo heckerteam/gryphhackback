@@ -123,6 +123,12 @@ async function getEvents() {
         tempEmail.innerHTML = posts[i].email;
         document.getElementById("post" + i).appendChild(tempEmail);
       }
+      if (posts[i].min_age){
+        tempAge = document.createElement("h2");
+        tempAge.className = "age";
+        tempAge.innerHTML = posts[i].min_age + " years old";
+        document.getElementById("post" + i).appendChild(tempAge)
+      }
       if (posts[i].description) {
         tempDesc = document.createElement("p");
         tempDesc.className = "description";
@@ -163,6 +169,11 @@ async function getEvents() {
         tempEmail.className = "email";
         tempEmail.innerHTML = "Volunteering@GeulphUniversity.com";
         document.getElementById("post1").appendChild(tempEmail);
+
+        tempAge = document.createElement("h2");
+        tempAge.className = "age";
+        tempAge.innerHTML = "16 years old";
+        document.getElementById("post1").appendChild(tempAge)
 
       tempDesc = document.createElement("p");
         tempDesc.className = "description";
