@@ -14,7 +14,7 @@ let nameArray = []
 
 var logoIcon = L.icon({
   iconUrl: 'unknown.png',
-  shadowUrl: 'leaf-shadow.png',
+  shadowUrl: 'unknown.png',
 
   iconSize:     [45, 45], // size of the icon
   shadowSize:   [0, 0], // size of the shadow
