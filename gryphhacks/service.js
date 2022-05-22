@@ -15,6 +15,7 @@ async function sendData() {
   let eTime = document.getElementById("eTime").value;
   let address = document.getElementById("address").value;
   let desc = document.getElementById("desc").value;
+  let email = document.getElementById("email").value;
   const [lat, long] = await (await getCords(address));
   fetch("apistuff", {
     method: "POST",
@@ -26,6 +27,7 @@ async function sendData() {
       latitude: lat,
       longitude: long,
       description: desc,
+      email: email
     }),
   })
     .then(function (response) {
