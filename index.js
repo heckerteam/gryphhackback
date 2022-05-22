@@ -6,10 +6,10 @@
 
 const apikey = "pk.eyJ1IjoianA4NDEzMzEiLCJhIjoiY2wzZjEwMGE0MDBiaTNla2JsZnB0M3RmdSJ9.ZLQyQW6BpT7i2PcIG2beOw"
 let pos = [43.53271, -80.22747];
-latitude = []
-longitude = []
-locationArray = []
-nameArray = []
+let latitude = []
+let longitude = []
+let locationArray = []
+let nameArray = []
 
 // let mymap = L.map('map').setView([pos[0], pos[1]], 13);
 
@@ -21,8 +21,7 @@ document.querySelector('.find-state').addEventListener('click', () => {
         console.log(pos);
         const mymap = L.map('map').setView([pos[0], pos[1]], 13);
 
-        console.log("longitude: ", longitude)
-        console.log("latitude: ", latitude)
+        
         
         //ALL THE MARKERS COME IN HERE
         for(i = 0; i<longitude.length; i++){
@@ -82,10 +81,9 @@ async function getEvents() {
     .then((res) => {
       return res;
     })
-    .catch(error => alert("there has been an error with loading please try again\n" + error));
+    .catch(error => console.warn("there has been an error with loading please try again\n" + error));
 
-  console.log(posts[0]);
-  if (posts.length > 0) {
+  if (posts && posts.length > 0) {
     for (i = 0; i < posts.length; i++) {
       temp = document.createElement("div");
       temp.className = "post";
@@ -131,6 +129,35 @@ async function getEvents() {
         longitude.push(posts[i].long)
       }
     }
+  }else{
+    temp = document.createElement("div");
+      temp.className = "post";
+      temp.id = "post1";
+      document.getElementById("main").appendChild(temp);
+
+      tempPosition = document.createElement("h2");
+      tempPosition.className = "position"
+      tempPosition.innerHTML = 'Geulph University Volunteer Tutor';
+      document.getElementById("post1").appendChild(tempPosition);
+      nameArray.push("Geulph University Volunteer Tutor");
+
+      tempLocation = document.createElement("h2");
+      tempLocation.className = "location";
+      tempLocation.innerHTML = "Geulph University";
+      document.getElementById("post1").appendChild(tempLocation);
+      locationArray.push('Geulph University');
+      latitude.push('43.53285');
+      longitude.push('-80.22614');
+      
+      tempTime = document.createElement("h2");
+      tempTime.className = "timings";
+      tempTime.innerHTML ="3:00 - 7:00"
+      document.getElementById("post1").appendChild(tempTime);
+
+      tempDesc = document.createElement("p");
+        tempDesc.className = "description";
+        tempDesc.innerHTML = "help students at the university to help in their studies and mentor them in continuing their education and joining the workforce";
+        document.getElementById("post1").appendChild(tempDesc);
   }
 }
 
