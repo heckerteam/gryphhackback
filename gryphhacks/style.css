@@ -1,6 +1,6 @@
 #map{
-    height: 600px;
-    width: 600px;
+    height: 60%;
+    width: 40%;
     margin-left: 55%;
     position: fixed;
     top: 20%;
@@ -8,8 +8,8 @@
 
 }
 .find-state{
-    height: 600px;
-    width: 600px;
+    height: 60%;
+    width: 40%;
     margin-left: 55%;
     position: fixed;
     top: 20%;
