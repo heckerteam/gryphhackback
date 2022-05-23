@@ -45,7 +45,9 @@ async function sendData() {
   })
     .then(function (response) {
       if (response.ok) {
+        location.reload()
         return response.json();
+        
       }
       return Promise.reject(response);
     })

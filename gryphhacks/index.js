@@ -75,11 +75,11 @@ async function getEvents() {
         tempTime.innerHTML =
           Sdate.getHours() +
           ":" +
-          Sdate.getMinutes() +
+          ('0' + Sdate.getMinutes()).slice(-2) +
           " - " +
           Edate.getHours() +
           ":" +
-          Edate.getMinutes();
+          ('0' + Edate.getMinutes()).slice(-2);
         document.getElementById("post" + i).appendChild(tempTime);
       }
       if (posts[i].email) {
@@ -154,7 +154,7 @@ document.querySelector('.find-state').addEventListener('click', () => {
         console.log(position);
         pos = [position.coords.latitude, position.coords.longitude];
         console.log(pos);
-        const mymap = L.map('map').setView([pos[0], pos[1]], 13);
+        const mymap = L.map('map').setView([pos[0], pos[1]], 10);
 
 
         //ALL THE MARKERS COME IN HERE
