@@ -13,7 +13,7 @@ async function signUp() {
   };
   console.log(out);
 
-  fetch("http://api.sevahub.tech:8080/api/signup", {
+  fetch("http://34.125.42.33:8080/api/signup", {
     method: "POST",
     body: JSON.stringify(out),
   })
@@ -39,7 +39,7 @@ async function login() {
     password: password,
   };
   console.log(send);
-  let a = await fetch("http://api.sevahub.tech:8080/api/login", {
+  let a = await fetch("http://34.125.42.33:8080/api/login", {
     method: "POST",
     body: JSON.stringify(send),
   })

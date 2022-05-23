@@ -28,7 +28,7 @@ async function sendData() {
   }
   let isRecurring = document.getElementById("isRecurring").checked;
   const [lat, long] = await (await getCords(address));
-  fetch("http://api.sevahub.tech:8080/api/events/create", {
+  fetch("http://34.125.42.33:8080/api/events/create", {
     method: "POST",
     body: JSON.stringify({
       name: nameHtml,
