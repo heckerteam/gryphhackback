@@ -47,7 +47,7 @@ async function login() {
       if (!response.ok) return Promise.reject(response);
       if(response.status == 200){
         console.log(response.body)
-        location.href='index.html'\
+        location.href='index.html'
         
       }else{
         alert("password or username is incorrect\nPlease try again")
